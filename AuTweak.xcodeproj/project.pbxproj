@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2210D79423F3ED3B000197C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210D79323F3ED3B000197C7 /* Foundation.framework */; };
+		2210D79E23F3ED3B000197C7 /* AuTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2210D79D23F3ED3B000197C7 /* AuTweak.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2210D79023F3ED3B000197C7 /* AuTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AuTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2210D79323F3ED3B000197C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2210D79823F3ED3B000197C7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.txt; sourceTree = "<group>"; };
+		2210D79923F3ED3B000197C7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		2210D79B23F3ED3B000197C7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PackageVersion.plist; path = ../PackageVersion.plist; sourceTree = "<group>"; };
+		2210D79C23F3ED3B000197C7 /* AuTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AuTweak-Prefix.pch"; path = "../AuTweak-Prefix.pch"; sourceTree = "<group>"; };
+		2210D79D23F3ED3B000197C7 /* AuTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AuTweak.mm; sourceTree = "<group>"; };
+		2210D7A223F3ED3B000197C7 /* AuTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuTweak.plist; sourceTree = "<group>"; };
+		2210D7AA23F3EDA0000197C7 /* substrate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = substrate.h; sourceTree = "<group>"; };
+		2210D7AB23F3EDA0000197C7 /* libsubstrate_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsubstrate_arm64.dylib; sourceTree = "<group>"; };
+		2210D7AC23F3EDA0000197C7 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2210D78C23F3ED3B000197C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2210D79423F3ED3B000197C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2210D78623F3ED3B000197C7 = {
+			isa = PBXGroup;
+			children = (
+				2210D79523F3ED3B000197C7 /* AuTweak */,
+				2210D79223F3ED3B000197C7 /* Frameworks */,
+				2210D79123F3ED3B000197C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2210D79123F3ED3B000197C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2210D79023F3ED3B000197C7 /* AuTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2210D79223F3ED3B000197C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7A823F3EDA0000197C7 /* libsubstrate */,
+				2210D79323F3ED3B000197C7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2210D79523F3ED3B000197C7 /* AuTweak */ = {
+			isa = PBXGroup;
+			children = (
+				2210D79D23F3ED3B000197C7 /* AuTweak.mm */,
+				2210D79623F3ED3B000197C7 /* Package */,
+				2210D79A23F3ED3B000197C7 /* Supporting Files */,
+			);
+			path = AuTweak;
+			sourceTree = "<group>";
+		};
+		2210D79623F3ED3B000197C7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				2210D79723F3ED3B000197C7 /* DEBIAN */,
+				2210D79F23F3ED3B000197C7 /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		2210D79723F3ED3B000197C7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				2210D79823F3ED3B000197C7 /* control.txt */,
+				2210D79923F3ED3B000197C7 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		2210D79A23F3ED3B000197C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2210D79B23F3ED3B000197C7 /* PackageVersion.plist */,
+				2210D79C23F3ED3B000197C7 /* AuTweak-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2210D79F23F3ED3B000197C7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7A023F3ED3B000197C7 /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2210D7A023F3ED3B000197C7 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7A123F3ED3B000197C7 /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		2210D7A123F3ED3B000197C7 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7A223F3ED3B000197C7 /* AuTweak.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		2210D7A823F3EDA0000197C7 /* libsubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7A923F3EDA0000197C7 /* Headers */,
+				2210D7AB23F3EDA0000197C7 /* libsubstrate_arm64.dylib */,
+				2210D7AC23F3EDA0000197C7 /* libsubstrate.dylib */,
+			);
+			name = libsubstrate;
+			path = ../libsubstrate;
+			sourceTree = "<group>";
+		};
+		2210D7A923F3EDA0000197C7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2210D7AA23F3EDA0000197C7 /* substrate.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2210D78D23F3ED3B000197C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2210D78F23F3ED3B000197C7 /* AuTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2210D7A523F3ED3B000197C7 /* Build configuration list for PBXNativeTarget "AuTweak" */;
+			buildPhases = (
+				2210D78B23F3ED3B000197C7 /* Sources */,
+				2210D78C23F3ED3B000197C7 /* Frameworks */,
+				2210D78D23F3ED3B000197C7 /* Headers */,
+				2210D78E23F3ED3B000197C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuTweak;
+			productName = AuTweak;
+			productReference = 2210D79023F3ED3B000197C7 /* AuTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2210D78723F3ED3B000197C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				TargetAttributes = {
+					2210D78F23F3ED3B000197C7 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 2210D78A23F3ED3B000197C7 /* Build configuration list for PBXProject "AuTweak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2210D78623F3ED3B000197C7;
+			productRefGroup = 2210D79123F3ED3B000197C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2210D78F23F3ED3B000197C7 /* AuTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2210D78E23F3ED3B000197C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$iOSOpenDevPath/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2210D78B23F3ED3B000197C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2210D79E23F3ED3B000197C7 /* AuTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2210D7A323F3ED3B000197C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = $HOME/Tools/iOS/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		2210D7A423F3ED3B000197C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = $HOME/Tools/iOS/iOSOpenDev;
+			};
+			name = Release;
+		};
+		2210D7A623F3ED3B000197C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AuTweak/AuTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		2210D7A723F3ED3B000197C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AuTweak/AuTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2210D78A23F3ED3B000197C7 /* Build configuration list for PBXProject "AuTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210D7A323F3ED3B000197C7 /* Debug */,
+				2210D7A423F3ED3B000197C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2210D7A523F3ED3B000197C7 /* Build configuration list for PBXNativeTarget "AuTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210D7A623F3ED3B000197C7 /* Debug */,
+				2210D7A723F3ED3B000197C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2210D78723F3ED3B000197C7 /* Project object */;
+}
